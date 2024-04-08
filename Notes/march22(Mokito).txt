@@ -1,0 +1,52 @@
+-**Maven :-  it is a open source build automation and project management tool whiledly is used for java application
+ it automate the source code compilation and dependentciey management and execute the source code.
+
+-* Pom:- it nothing but project object modula. it is xml file which contain information about the project and configration details.
+
+/*Mokito :- it is a moking framework.It is java based library used to create simple and basic test api.This api performing 
+            unit testing i.e called as java application.
+e.g junit,
+ 
+-*Unit Testing:- it is software testing technique in which indivisual components parts of the software is tested 
+                 the aim of unit testing is isolate the segments of code and verified the correctness.
+
+Q. why we use moking?
+-> moking is the process of developing objects and it is act as an mock or clone of the real objects in other words moking is 
+   the testing technique where mock objects are used.
+
+-* mokito objects three concepts:-
+
+1. Stub:-stub objects hold predefined data and provide answer the calls during testing .
+	it also provide methods to verify other method
+         stub object generally used for state verification.
+2. fake:- fake objects contain working implementation.
+3. mock:- mock objects acts as a dummy data and clone  real objects in testing .
+	it is typically used to check behaviour verification.
+
+
+Benefits of mokito:-
+1.No handwriting.
+2.anotation support.
+3.creation of object.
+4.exception support.
+5.order support.
+6.refactoring.
+
+-* Methods of mokito:-
+1.mock():-it is used to create the mock object for classes and interfaces. 
+	a] mock(Class<T> classToMock):- this method created mock opbjects of specific class or interfaces.
+					it takes class or interface as parameter."T" stands for type.
+		example:-
+	b] mock(Class<T> classToMock,Answer defaultAnswer):- This is advance method carete mock objects with speicific behaviour.
+								The answer parameter is nothing but custom response.
+2.verify():- this method verified specific method have been called during test.
+		validate exepected behaviour of code.
+3.when():- when method speifiy behaviour of mock object when certain methods called.
+  SYNTAX:- when(T methodCall)
+4.Spy():- spy is nothing but partially testing of real object. it is used when object need to modify over readine the certain method for test.
+
+group id = package name
+artifact id = project name/ jar name.
+
+
+********NOTE:- MOKITO MAIN METHODS SE METHOD KO CALL KARANA HAI.

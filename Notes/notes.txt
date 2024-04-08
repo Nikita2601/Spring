@@ -1,0 +1,22 @@
+junit is a testing freamwork.The java programmer can create test cases and test his or her own code.junit framework is anotated 
+based framework .This annotation used while writing the test case.Junit is avilabale in eclipse. it only run the method and method shuld be public void.
+Junit types of testing:=
+1. Manual testing= ti means execute test case without tool support .It is time consuming and less riable.
+2.Automated tesing = in automated testing test case executed by tool support.It is fast and more riable
+1. @Test:- it is used to specified test case.tells junit which public void method can be run a test case.
+* Syntax:= AssertEquals:= if assime value and actual values both are equals then test case is true other wise false.
+2. @Before:- To execute some statement before each test case.
+3. @After:- To execute some statements after each test case.
+4. @BeforeClass:- used to execute statement before all the test class.
+5. @AfterClass:- used to execute statement after all the test cases.
+6. @Ingnore:- used to ignore some statements during test executions.
+****NEED OF JUint=
+To find bugs,error in the development page we are going to use JUint.
+
+FEATURES OF JUint=
+1. open source network.
+2. provides annotations.
+3. provide asserpions.
+4. improve code quality.
+
+@ parameterised test is used to pass the array elements if arraytype is integer value source is sholud be ints and if value source of ints and array 

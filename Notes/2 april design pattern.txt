@@ -1,0 +1,72 @@
+DESIGN PATTREN :- IT IS USED REUSABLE SOLUTION .IT PROVIDE WAIT TO SOLVE COMMON SOFTWARE DESIGN PROBLEM
+
+**FEATURES OF DESIGN PATTREN :-
+1.REAUSABILITY
+2. MAINTAINABILTY
+3. SCALABLITY
+4. FASTER DEVELEMENT
+
+***TYPES:-
+1. CREATIONAL DESIGN PATTREN:-  IT IS DEALS WITH CREATION OF OBJECT
+E.G.:- WHENEVER WE ARE ELPLEMENTING CRUD OPRATION WR ARE CALLING DATABASE WE ARE ACCESSING DATABASE
+	INSTEAD OF CREATING MULTIPLE OBJECTS DEFINED DB CONNECTION ONCE AND CALL IT USING ONE OBJECT WHENEVER WE NEED.
+***IT IS DEVIDED INTO THE TWO DIFFRENT TYPES:-
+A. SINGLE TONE DESIGN PATTERN:- it is used to ensure class is having only one instance.It is used for logging cashing and databacse 
+				CONNECTIVITY.
+	E.G.:-	crud methods:-
+		create()      connection only one 
+                read()  ---------------------------->DATABASE
+                update()
+                delete()
+B. FACTROY METHOD:- 	In factory method design pattern .it is process of object creation factory method pattern sujjesters
+			define and interface or abstract class but sub-class will deside objects and class instance 
+ POJO:- 	means simply plane old java object class .It contains private variables getter, setter, contructor,
+		 default constructor ,to string methods 
+
+ADVANTAGE OF POJO CLASS:- using pojo class we can transfer the data as well we can connect diffrent components
+		    and we can connect with the table
+
+DAO:- means data access object.it is used to access the data from table and it is act as bussiness logic uasally. 
+	it is used to showing the realtional databases.
+what are jdbc drivers?
+a-> jdbc stand for java database connectivity. if we are intracting with java with database we need jdbc driver classes.
+    their are four types of jdbc classes->
+    a] JDBC-ODBC BRIDGE DRIVER :- it used to odbc driver to  connect database odbc stands object database connectivity.
+				 it converts jdbc method calls into odbc function calls
+    B] NATIVE API DRIVER:-  it uses libralies the into database and driver converts into the jdbc method calls into the database application api.
+    C] NETWORK PROTOCOLE DRIVER:- it converts directly jdbc calls into the database .
+    D] FULLY JAVA DRIVER(THIN DRIVER):- in  thin driver we are creating whole java application to convert jdbc call into the database protocole
+STEPS CONNECT WITH DATABASE:-
+1] RESIGTER THE DRIVER CLASS:- IT LOAD DRIVER CLASS USING CLASS FOR NAME("")
+         |                     EX:- CLASS.FORNAME("COM.MYSQL.CJ.JDBC.DRIVER")
+         |
+	 |
+2] CREATE CONNECTION :- SYNTAX:- getConnection(String url,String uname,string pswd);
+         |                EX:- Connection conn=DriverManager.getConnection(url,uname,pswd);
+         |
+	 |
+3] CREATE STATEMENT :-public Statement createStatement()
+         |            EX:- Statement s=conn.createStatement();
+         |
+	 |
+4] EXECUTE QUERY:- ResultSet executeQuery(String query)
+         |         EX:- ResultSet rs= Statement.executeQuery("select* from emp");
+         |
+	 |
+5] CLOSE CONNECTION:- conn.close();
+what is design pattern?
+why we use design pattern?
+what is diffrence between preparedstatement,statement,collable statement?
+
+prepared statement :- It is inbuild class which is aviavble in java,sql pacakage it can pre-compile and stroed objects(columns) from the table.we if want to stored multiple data
+			we are going to used prepared statement.it is follow tarnary operator like ?(questionsmark)
+
+result set:- it is inbuilt interface which is used to count number of rows and number of columns from the table.generally it execute read qurey whenever we are reading data from database
+		we are going to use resultset
+ 
+statement:- it is a inbuilt class which is avilable in java.sql pacakage whenever we want to execute single qurey we are going to used statement.    
+
+NOTE:- WHENEVER WE ARE PASSING COLMNU NAME WHITHIN LIKE INSERT UPDATE QUERY THE WE HAVE  TO USE PREAPARED STATEMENT IN THE CLASS .AND WHENEVER WE ARE NOT PASSING ANY COLMNUS IN QUREY THEN WE HAVA TO USE STATEMENT CLASS 
+E.G.:- SELECT * FROM TABLE NAME;   
+
+CREATE STATEMENT:- IS A INBUILT METHOD WHICH IS USED TO SENDING THE OBJECTS FOR SQL STATEMENT TO THE DATABASE IT IS USED TO INTERACT DATABASE  .                                                                                                                                                                                                                                                                                      

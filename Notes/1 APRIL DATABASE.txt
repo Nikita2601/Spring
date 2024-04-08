@@ -1,0 +1,47 @@
+foreign key :- it is use to refer primary key value for other table.it is used to linked rolls for to diffrent tables.
+SYNTAX:- CREATE TABLE TABLE_NAME1( CLOUMN 1 DATATYPE,COLUMN2 DATATYPE, FOREIGN KEY(COLUMN1) REFERENCES TABLENAME(COLUMN1));
+FOREIGN KEY IS A COLUMN OR SET OF COLUMNS THAT REFERENCES ANOTHER COLUMN OR SET OF COLUMNS IN ANOTHER TABLE.
+foreign key is defined using foreign key contraints.it is handle null values.
+
+Q:- WHAT IS DIFFERNT BETWEEN PRIMAREY KEY AND FOREIGN KEY ?
+
+A:- PRIMARY KEY UIQUELY IDENTIFING ROW IN A TABLE WHILE FOREIGN KEY IS USED TO LINK TWO TABLES TOGETHER BY REFERNCEING THE PRIMARY KEY OF THE RELATED TABLE .
+    PRIMARY KEY CANNOT HANDLE NULL VALUE WHERE AS FOREIGN KEY CAN HANDLE NULL VALUE.
+    
+interview questions on sql
+
+1.what is sql?
+2.DML,DDL,DCL ?
+3.DIFFRENCE BETWEEN TRUNCATE,DROP,DELETE?
+4.TYPES OF JOIN ?
+5. EXPAIN THE CLAUSES?
+6.FIND OUT SECOND HIGHEST SALARY FROM TBALE(QUERY)?
+7.WHAT IS NORMALIZATIOIN AND TYPES ?
+8. DIFFRENCE BETWEEN VIEW AND INDEX?
+A:- View:-it  is similar to table but it contain data from one or more tables connected to eachother.
+          View is nothing but virtual table
+    Index:-it is like a data stuctuire it is create to improve the performnace like (insert ,update,delete)
+9.HOW TO SHOW THE INDEXS?
+A. SYNTAX:- show indexes from table_name;
+    
+
+NORMALIZTION:- IT IS a process of elemenate data residancy(dublication).
+		it's help us to oragnized the data in the database.
+		data is set into tabular(row and column) format it remove the dublicate data from the realtional tables.
+
+IMPORTANT
+TYPES OF NORMALIZATION:-
+1] 1NF:- IT IS USED FOR TO ACHIEVE ATOMICITY(DATA SHOULD UNIQUE).
+	NOTE:- we add primary key.
+Q. WHAT IS CANDIDATE KEY?
+A. it is set of one or more coulmns that can indentify each and every record uniquely in a table.
+ you can use each candidate key as primary key.
+ 
+Q. WHAT IS SUPER KEY?
+1] 1NF:- it is set of over one key that can identify record uniquely in a table and the primary key is subset of super key.
+2] 2NF:- Table should not process partail dependncy in second normal form we are acheieve transitivity (two tables are depenetant on eachother)
+3] 3NF:- it is ensures reduction of data dublication .it is also used for data integrity.
+4] BCNF(BOYCEE CODE NORMAL FORM):-it is based on functional depentcies between the table attributes and relation.
+				bcnf states every non-key column in a table should depent on primary key.
+oops,collection, what is diffreneces between final and static,constant,.what is array.
+what is a string and stringbuilder,stringbuiffer? exception threading.
