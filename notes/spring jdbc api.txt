@@ -1,0 +1,10 @@
+SPRING JDBC TEMPLATE:- it is used to connecte with the database and mcq sql quries .It internally uses jdbc api but it elements lot of problems of jdbc api
+		
+
+ADVANTAGE OF JDBC SPEING TEMPLATES:-
+CRETAEING CONNECTION CLOSING CONNECTION EXECUTING  QUERY this all facilities are avilable into spring jdbc api template.IN spring jdbc api template we are having
+   inbuilt result map interface so we can easily read the data from the database.
+
+DATA SOURCE:- it is inbuilt class which is used to connect with database.It is avilable in javax.sql classss.It is bridge in between data base and data reader.
+		using data source object we can automatically create connection pull.Datasource object is used to apply the changes.
+E.X:- if we modify the database or  if we move the data base on diffrent server 

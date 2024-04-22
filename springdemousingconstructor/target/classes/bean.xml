@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="m" class="com.eb.entity.Post">
+        <constructor-arg value="100 " type="int"> </constructor-arg>
+        <constructor-arg value="java is secure" type="String"></constructor-arg>
+        <constructor-arg value="nice" type="String"></constructor-arg>
+         </bean>
+   </beans>

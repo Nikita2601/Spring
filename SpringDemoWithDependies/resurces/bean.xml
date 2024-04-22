@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:p="http://www.springframework.org/schema/p" 
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="cc" class="com.eb.entity.Course">
+        <property name="co_id" value="1001"></property>
+        <property name="co_name" value="java"></property>
+        <property name="duration" value="3 months "></property>
+        <property name="fees" value="2000 "></property>
+        
+        </bean>
+        <bean id="c1" class="com.eb.entity.Student">
+        <property name="stud_id" value="1001"></property>
+        <property name="name" value="neha" ></property>
+        <property name="course" value="java" ></property>
+        <property name=" course" ref="cc" ></property>
+        
+        
+        </bean>
+        </beans>

@@ -1,0 +1,22 @@
+what is anotation in pojo class?
+what is pojo class?
+what is dao?
+what is hibernate template?
+
+HIBERNATE TEMPLATE:- It is helper class. It is used to access the data from the database 
+
+@TRANSCATION:- the anotation is used to mark method or class as a transcational. It is used to perform
+                               database operations instead of writing the queries we are going to take crud method 
+		from transcational 
+EXAMPLE:-   save()=insert query.
+	   get()=select query.
+	 delete()=delete query.
+	update()=update query.
+	loadAll()=reterive all data from table.
+
+spring with hibernate template.
+ springcore.
+spring introduction 
+ ioc di
+jdbctemplate
+spring with hibernate

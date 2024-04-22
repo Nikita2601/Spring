@@ -1,0 +1,59 @@
+what is spring boot?
+why we use spring boot?
+SPRING BOOT:- It is an open source microservice based java web framework.It is used to create restfull api application .It is used to create standalone spring based application
+	         It is used to create rappied application development that is rap .Spring boot provide command line interface using this CLI we can easily create the application.Already
+	        dependies are available .Spring boot application running on localhost.It is having inbuilt tomcat server(localhost connected) .
+	        using spring boot we can cretae faster way application,setup and configure application and easily we can run the application.
+	        Spring boot is combination of spring framework and embedded server.
+
+NOTE:-SPRING BOOT PROVIDE ANOTATION 
+
+SPRING BOOT + EMBEDED SERVER(TOMCAT SERVER) - XML CONFIGURATION = SPRING BOOT
+
+SPRING BOOT FEATURES:-
+1]  It create standalong spring  application.
+2]  It test web application easily with the help of diffrenet embedded http server such as tomcat,jetty,etc.
+3] We no need to deploy war files.
+4]  It provides inbuilt maven configuration with pom(project object module) file.
+5]  It provides ready features such as matrices,health checks and externalized configuration.
+6]  Their is no requirement for xml configuration.
+7] It offers CLI(COMMAND LINE INTERFACE) tool for developing and testing the spring boot application.
+8]  It offers the number of pulgins.
+9] It also minimuzed biler plate code.
+10] It increasesd productivity and reduse development file.
+
+
+@SpringBootApplication:-  this anotation used to create simple spring boot application. It automatically configure application.It is combination of 3 diffrenet anotation
+ 	1]@EnableAutoConfiguration.:- this anotation is all about anotomating the configuration of springboot apllicatuion.IT configure in the bean that are presenting the class path.
+		e.g.:- If you have tomcat embedded.jar file on class path springboot will automatically create tomcat embedde serverlate container factory bean to configure tomcat server
+		         This will helps us to configure the code reducing builer plate and simlified the development process
+	2]@CompoenetScan:- this anotation it is used the scan the based packages and all its sub-packages.It anotation configure components like rest template,jdbc templamte,hibernate template
+		e.g:- model,services,respositary,etc
+	3]@Configuration:-
+
+@RestController:-
+
+@Controller:- request and response handle.
+@RequestMapping:-method signature handle with response body.
+
+
+INTERVIEW QUESTIONS**************************
+what is spring boot ?
+what is used of @SpringBootApplication?
+what is diffrenece between spring,springboot?
+
+
+
+
+
+
+
+
+
+
+
+
+
+interview 
+constructor overloading over rrinding array oops srtring stringbuilder string buffer  collection 
+advanced for loop hashmaploop iterator   java8 mysql(dml,dcl,ddl,truncate) springcore ,

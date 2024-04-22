@@ -1,0 +1,70 @@
+ LIBRARY MANAGEMENT SYSTEM:-
+
+1] BOOK TABLE:- BOOKID,BOOK NAME,BOOK AUTHER,BOOK PRISE,PUBLICATION.
+ OPERATIONS:- ADD BOOK ,UPDATE BOOK ,SEARCH (AUTHER,BOOK NAME),DELETE BOOK ID,SHOW ALL
+
+interview question
+WHAT IS HYBERNATE?
+What are the types of hibernate interface?
+***
+thier are three types og hibernate interface:-
+a] SSESION Factory:- it is bridge in between pojo class and database.it helps us to connect with the database.
+b] 
+WHAT IS DIFFRENECE BETWEEN HYBERNATE and JPA?
+*****
+JPA:- a] jpa provides specification of ORM .
+      b] It is just a specification implementation is not happend.
+      c] It defined set of standard API for ORM.
+      d] It using JPQL language(JAVA PERSISTANCE QYERY LANGUAGE)
+      e] It requireds xml and anotation based configuration.
+HYBERNATE:- a] Hybernate is ORM tool.
+            b] It provides implemenatation.
+   	    c] It provides trancation management.
+	    d] It uses HQL(HIBERNATE QUERY LANGUAGE)
+            e] It is also used xml and Anotation configuartion.
+WHAT IS HYBERNATE?
+WHAT IS ORM?
+WHAT IS JPA?
+WHAT IS ENTITY?
+****
+ENETITY ISNOTHING BUT THE POJO CLASS AGREEGATE THE OBJECTS TOGETHER AND PERSISTS DATA
+
+
+
+JPA:- JPA for stands java persistance api. It provides specification of java .It is used to store the data into the database.
+       JPA provides only specification implemenetation is not happed in jpa to provide implementation we are going to used tools
+	like hybernate,ibatis,toplink.
+hybernate is a ORM tool. ORM stands object relationship mapping.
+
+JPA LIFE CYCLE:- lifecycle consist of Four states. new ,manage,remote,Detached
+a] NEW- entity object newly created.
+b]MANAGED-when we commit the tranction enetity object get managed and persist data using three method
+   i]  EntityManager.persist(Entity object);
+   ii] EntityManager.find(Long id);
+   iii] update operation.
+c] Removed:- perticular entity object get mark as delete.
+d] Detanched:- entity object thet have been disconnected.
+
+THIER ARE TWO WAYS TO IMPELEMENT THE 
+ A] BY XML:-
+ B] BY ANOTATION:-
+ IN ECPLISE INSTALLED THE (HELP-> ECPLISE MARKETPLACE->IN SEARCH BOX->JBOSS).
+  HBM:- stands for hibernate mapping file.it is an xml file in which we difined mapping between pojo class to database table.
+
+    <class name="package with class file name" table="table_name" catlog="database_name"><id name="column _name type="package name with primitive data type (otherwise get it string )>"
+      class property is used to call properties from pojo class.It is root entity.
+
+POM:- Project Object Module.
+pojo class is supported of getter and setter.
+dao:- inserting the data(all operations).
+main:- run the application.
+database:- connecting the database.
+
+
+
+       how to create jboss project
+             1]first createing the java project.
+	     2]then created the pojo package.after that created two class in the pojo package.
+	     3] rigth click on src select new then select the resources file and creating the .hbm.xml file of whatever creating the classfile in the pojo package.
+	     4] in .hbm.xml file click on sources file and then creating the table in the java.
+	     5]

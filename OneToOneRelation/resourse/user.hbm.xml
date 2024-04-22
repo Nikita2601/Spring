@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping>
+<class name="com.onetoone.model.User" table="user_table" catalog="onetoone">
+<id name="id" type="int">
+
+<generator class="foreign ">
+<param name="property">user</param>
+</generator>
+</id>
+<property name="addressLine" type="java.lang.String">
+<column name="addressLine"/>
+</property>
+<property name="city" type="java.lang.String">
+<column name="city"/>
+</property>
+<property name="pinCode" type="int">
+<column name="pinCode"/>
+</property>
+<one-to-one name="user"  class="com.onetoone.model.User"></one-to-one>
+</class>
+</hibernate-mapping>

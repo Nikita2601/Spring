@@ -1,0 +1,11 @@
+hql:- it is hibernate query language .it is silimilar to sql query but based on objects.hql iternaly transalte into
+        sql query to performs insert,update,delete and other database. such as hqlkeywords are not case sesnsitive such as form select insert ,delete,etc.
+         
+query interface:- it is an object oriented representation of hibernate query the object of query can be obtend by calling create query method.the query interface provide
+                           many methods 
+1] public  int executeupdate():- it is used to execute update or delect query
+2] public List list():- returns result of the list.
+
+
+query class:- retraiving the data from database.
+createquery :- it is use to fetch the details from the table.

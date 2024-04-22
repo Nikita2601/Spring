@@ -1,0 +1,12 @@
+Trascation class :- tracsation is associate with session .it is usually called session.beginTransaction(); method
+                             it is conversation between application and data store.it is implementation of jdbc api.
+	  
+create criteria:-it is used tospecifiy the number of records and retriave the records .
+
+session:- it is helping to combinationi of jdbc to database.
+
+MAPPING:- 
+A] ONE TO ONE 
+B]ONE TO MANY
+C]MANY TO ONE
+D] MANY TO MANY
